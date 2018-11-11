@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pokemon Guess Game</title>
+
+    <!--reset css-->
+
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
+
+    <!--javascript-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!--my own css-->
+
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Guess the Pokemon Starter Name!</h1>
+        <p>Guess the letter i'm thinking of!</p>
+
+        <!--clicking the button starts the game-->
+
+        <h3>Press any key to start</h3>
+        <!--tracks of wins-->
+
+        <p>Wins:
+            <span id="wins"></span>
+        </p>
+
+        <!--tracks of losses-->
+
+        <p>Losses:
+            <span id="loss"></span>
+        </p>
+
+        <!--number of guesses remaining-->
+
+        <p>Guesses Remaining:
+            <span id="guesses"></span>
+        </p>
+
+        <!--tracks key inputs made so far-->
+
+        <p>Keys Guessed:
+            <span id="keyInputs"></span>
+        </p>
+    </div>
+    <script src="./assets/javascript/game.js">
+    </script>
+
+</body>
+
+</html>

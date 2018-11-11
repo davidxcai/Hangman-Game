@@ -2,11 +2,16 @@
 //Array with the pokemon names
 var pokemonNames = ['charmander', 'bulbasaur', 'squirtle'];
 
+var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+'t', 'u', 'v', 'w', 'x', 'y', 'z'];
+
 //variables grabs the html <span> with a matching id
 var winText = document.getElementById("wins");
 var lossText = document.getElementById("loss");
 var guessRemText = document.getElementById("guesses");
 var guessedText = document.getElementById("keyInputs");
+var pokemonPicked = document.getElementById("hold");
 
 //values represented in html
 var wins = 0;
@@ -27,24 +32,33 @@ var spaces = '_';
 function randomPokemon() {
     computerGuess = pokemonNames[Math.floor(Math.random() * pokemonNames.length)];
     console.log("Computer picked the Pokemon: " + computerGuess);
+    document.getElementById("hold").innerHTML = computerGuess;
+    return computerGuess;
+}
+
+function hiddenLetters() {
+    document.getElementById("hold");
+    for (i = 0; i < pokemonNames.length; i++); {
+        console.log("testing hidden letters");
+    }
 }
 
 //resets the guesses to 9 after a win
 function resetGuess() {
     guesses = 9;
-    randomPokemon();
 }
 
 //resets the guessed keys to blank after a win
 function resetGuessed() {
     guessed = [];
-
 }
 
-
+//pokemon name gets guessed
+//run function to change letters to "_" until guessed correctly
+//displays pokemon name in hold <div>
+//when letters guessed correctly, change it to letters
 
 //runs the random letter function
-randomPokemon();
 
 //when a key is pressed, runs this function
 document.onkeyup = function (e) {
@@ -78,5 +92,6 @@ document.onkeyup = function (e) {
     lossText.textContent = loss;
     guessRemText.textContent = guesses;
     guessedText.textContent = guessed;
+    pokemonPicked.textContent = computerGuess;
 
 }

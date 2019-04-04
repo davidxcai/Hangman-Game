@@ -1,6 +1,6 @@
 # Hangman-Game
 
-(Website)[https://helloimdavidhaha.github.io/Hangman-Game/]
+[Website](https://helloimdavidhaha.github.io/Hangman-Game/)
 
 ## About
 

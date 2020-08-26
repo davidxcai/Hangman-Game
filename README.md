@@ -14,4 +14,4 @@ Users can play hangman with all 802 Pokemon. Each round will provide you with 9 
 GitHub used for hosting and versioning.
 
 ## Made By
-Dafydd Zephyr
+David Cai
